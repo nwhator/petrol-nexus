@@ -3,7 +3,8 @@ import MainLayout from '../layouts/MainLayout.astro';
 ---
 <MainLayout title="Petrol Nexus | Home" path="/">
   <section class="hero">
-    <div>
+    <div class="hero-copy">
+      <p class="eyebrow">Global Energy Operations Partner</p>
       <h1>Energy infrastructure built for scale, speed, and sustainability.</h1>
       <p>
         Petrol Nexus delivers upstream, midstream, and downstream support for operators across 25+ countries,
@@ -14,20 +15,39 @@ import MainLayout from '../layouts/MainLayout.astro';
         <a class="btn secondary" href="/contact">Contact Sales</a>
       </div>
     </div>
-    <div class="card">
-      <h3>At a glance</h3>
-      <p><strong>25+</strong> countries active</p>
-      <p><strong>10k+</strong> workforce across global operations</p>
-      <p><strong>99%</strong> safety compliance across managed sites</p>
+    <div class="hero-media">
+      <!-- TODO: Replace /images/hero-energy.svg with final brand-approved hero photography. -->
+      <img src="/images/hero-energy.svg" alt="Energy infrastructure with refinery and pipeline network" loading="eager" decoding="async" />
+      <div class="card hero-stats">
+        <h3>At a glance</h3>
+        <p><strong>25+</strong> countries active</p>
+        <p><strong>10k+</strong> workforce across global operations</p>
+        <p><strong>99%</strong> safety compliance across managed sites</p>
+      </div>
     </div>
   </section>
 
   <section class="section">
     <h2>Complete energy lifecycle support</h2>
     <div class="grid">
-      <article class="card"><h3>Exploration & Drilling</h3><p>Field planning, seismic support, and drilling program execution.</p></article>
-      <article class="card"><h3>Refining & Processing</h3><p>Plant optimization, reliability engineering, and asset upgrades.</p></article>
-      <article class="card"><h3>Logistics & Trading</h3><p>Storage, transport, and global delivery coordination.</p></article>
+      <article class="card">
+        <!-- TODO: Replace /images/exploration-placeholder.svg with approved service imagery. -->
+        <img class="card-media" src="/images/exploration-placeholder.svg" alt="Offshore exploration platform at sunrise" loading="lazy" decoding="async" />
+        <h3>Exploration & Drilling</h3>
+        <p>Field planning, seismic support, and drilling program execution.</p>
+      </article>
+      <article class="card">
+        <!-- TODO: Replace /images/refining-placeholder.svg with approved service imagery. -->
+        <img class="card-media" src="/images/refining-placeholder.svg" alt="Refinery processing infrastructure and control towers" loading="lazy" decoding="async" />
+        <h3>Refining & Processing</h3>
+        <p>Plant optimization, reliability engineering, and asset upgrades.</p>
+      </article>
+      <article class="card">
+        <!-- TODO: Replace /images/logistics-placeholder.svg with approved service imagery. -->
+        <img class="card-media" src="/images/logistics-placeholder.svg" alt="Energy logistics terminal with fuel storage and shipping routes" loading="lazy" decoding="async" />
+        <h3>Logistics & Trading</h3>
+        <p>Storage, transport, and global delivery coordination.</p>
+      </article>
     </div>
   </section>
 
@@ -37,6 +57,14 @@ import MainLayout from '../layouts/MainLayout.astro';
       <article class="card"><h3>Operational certainty</h3><p>24/7 monitoring and rapid response teams reduce downtime.</p></article>
       <article class="card"><h3>Digital-first execution</h3><p>Telemetry, predictive maintenance, and performance dashboards.</p></article>
       <article class="card"><h3>Responsible growth</h3><p>Lower-emission workflows aligned with modern compliance standards.</p></article>
+    </div>
+  </section>
+
+  <section class="section section-cta">
+    <div class="cta-shell">
+      <h2>Scale your next energy program with confidence.</h2>
+      <p>Book a strategy session with our technical team to design a safer, smarter operational roadmap.</p>
+      <a class="btn primary" href="/contact">Schedule a Consultation</a>
     </div>
   </section>
 </MainLayout>
