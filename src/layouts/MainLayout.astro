@@ -1,0 +1,51 @@
+---
+import '../styles/global.css';
+const { title, path = '/' } = Astro.props;
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/services', label: 'Services' },
+  { href: '/projects', label: 'Projects' },
+  { href: '/contact', label: 'Contact' }
+];
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="/">
+          <img src="/logo.svg" alt="Petrol Nexus logo" />
+          <span>Petrol Nexus</span>
+        </a>
+        <nav class="nav-links" aria-label="Main">
+          {links.map((link) => (
+            <a href={link.href} class={path === link.href ? 'active' : ''}>{link.label}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <slot />
+    </main>
+    <footer>
+      <div class="container">
+        <p><strong>Petrol Nexus</strong> • Powering reliable energy systems with safer, smarter operations.</p>
+        <div class="footer-links">
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
+          <a href="/compliance">Compliance</a>
+          <a href="/contact#global-offices">Global Offices</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
