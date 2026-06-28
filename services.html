@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PetroGlobal | Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary-container": "#b3d1fd",
+                        "on-secondary-container": "#3c597f",
+                        "petroleum-blue": "#1B3B5F",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#f7f9fb",
+                        "inverse-primary": "#b9c7e4",
+                        "on-tertiary-fixed": "#351000",
+                        "surface": "#f7f9fb",
+                        "on-secondary-fixed": "#001c38",
+                        "energy-orange": "#FF6B00",
+                        "on-primary-container": "#76849f",
+                        "primary-fixed": "#d6e3ff",
+                        "inverse-surface": "#2d3133",
+                        "surface-container": "#eceef0",
+                        "primary": "#000000",
+                        "tertiary-fixed-dim": "#ffb693",
+                        "on-primary-fixed-variant": "#39475f",
+                        "surface-dim": "#d8dadc",
+                        "on-surface": "#191c1e",
+                        "primary-container": "#0d1c32",
+                        "inverse-on-surface": "#eff1f3",
+                        "surface-container-high": "#e6e8ea",
+                        "on-secondary-fixed-variant": "#2a486d",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary": "#000000",
+                        "secondary-fixed-dim": "#abc8f4",
+                        "slate-surface": "#E2EBF0",
+                        "outline-variant": "#c5c6cd",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#b9c7e4",
+                        "surface-variant": "#e0e3e5",
+                        "on-error": "#ffffff",
+                        "action-cyan": "#00AEEF",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-primary-fixed": "#0d1c32",
+                        "surface-container-low": "#f2f4f6",
+                        "on-tertiary": "#ffffff",
+                        "surface-tint": "#515f78",
+                        "on-surface-variant": "#44474d",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#d3e4ff",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#f7f9fb",
+                        "outline": "#75777e",
+                        "on-background": "#191c1e",
+                        "tertiary-container": "#351000",
+                        "on-tertiary-fixed-variant": "#7a3000",
+                        "on-tertiary-container": "#dd5c00",
+                        "secondary": "#426086",
+                        "tertiary-fixed": "#ffdbcc",
+                        "deep-navy": "#0A192F"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "stack-sm": "16px",
+                        "base": "8px",
+                        "container-max": "1440px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "24px",
+                        "stack-lg": "80px",
+                        "stack-md": "32px"
+                    },
+                    fontFamily: {
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "headline-xl": ["Plus Jakarta Sans"],
+                        "label-md": ["Inter"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "caption": ["Inter"]
+                    },
+                    fontSize: {
+                        "display-lg": ["64px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "headline-lg": ["32px", { lineHeight: "1.3", fontWeight: "600" }],
+                        "headline-xl": ["48px", { lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "700" }],
+                        "label-md": ["14px", { lineHeight: "1.2", letterSpacing: "0.05em", fontWeight: "600" }],
+                        "headline-lg-mobile": ["28px", { lineHeight: "1.3", fontWeight: "600" }],
+                        "headline-md": ["24px", { lineHeight: "1.4", fontWeight: "600" }],
+                        "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "caption": ["12px", { lineHeight: "1.4", fontWeight: "400" }]
+                    },
+                    boxShadow: {
+                        'ambient': '0 10px 30px -5px rgba(10, 25, 47, 0.05)',
+                        'ambient-hover': '0 20px 40px -5px rgba(10, 25, 47, 0.08)'
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #F8FAFC; }
+    </style>
+</head>
+<body class="font-body-md text-on-surface antialiased bg-background">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-deep-navy/80 backdrop-blur-md shadow-sm dark:shadow-none transition-all duration-300">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop h-20">
+<div class="font-headline-md text-headline-md font-bold text-petroleum-blue dark:text-inverse-primary tracking-tight">
+                PetroGlobal
+            </div>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="font-label-md text-label-md text-on-surface dark:text-on-surface-variant hover:text-energy-orange transition-colors" href="#">Home</a>
+<a class="font-label-md text-label-md text-on-surface dark:text-on-surface-variant hover:text-energy-orange transition-colors" href="#">About</a>
+<a class="font-label-md text-label-md text-energy-orange font-bold border-b-2 border-energy-orange pb-1 opacity-80 scale-95 transition-transform" href="#">Services</a>
+<a class="font-label-md text-label-md text-on-surface dark:text-on-surface-variant hover:text-energy-orange transition-colors" href="#">Projects</a>
+<a class="font-label-md text-label-md text-on-surface dark:text-on-surface-variant hover:text-energy-orange transition-colors" href="#">Contact</a>
+</div>
+<div class="hidden md:block">
+<button class="bg-energy-orange text-white px-6 py-2 rounded font-label-md text-label-md hover:opacity-90 transition-opacity">Contact Us</button>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-petroleum-blue" data-icon="menu">menu</span>
+</div>
+</div>
+</nav>
+<!-- Page Header -->
+<header class="pt-32 pb-16 bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+<div>
+<h1 class="font-display-lg text-display-lg text-deep-navy mb-stack-sm md:font-headline-lg-mobile md:text-headline-lg-mobile lg:font-display-lg lg:text-display-lg">Our Global Services</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                        Powering progress through comprehensive energy solutions. From high-volume distribution to advanced engineering, we deliver reliability at a global scale.
+                    </p>
+</div>
+<div class="h-64 lg:h-96 w-full rounded-xl overflow-hidden relative">
+<div class="bg-cover bg-center w-full h-full absolute inset-0" data-alt="A striking wide-angle photograph of a massive, modern offshore oil rig complex at sunrise. The structural engineering is highlighted by the warm morning light, contrasting with the deep blue ocean. The image embodies industrial power, precision, and global reach within the petroleum sector, fitting a premium corporate aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDepEcqGeHYMhjqNnuxidKmB18YYvw8HUGmCxYb-MVrpCYenxIgCrdz3OMfETQ3HeR4DUg21UUXg3v0CpbgS4SHp9uGZzprKrXx89L8wL1JqAmmGWBItBI1vwALZeqUdgw43-4BNf7WuIQvJIBqE2BLDTxAzKRuXr1FKmi0MAvbGHeb3e4YIFmRYX79Zz9CDuFhB9iV2WqwJd7XA-seY6DJ9E3-_GqNf5MWfOkWvlcANG23eW860x_PqB4RL4VgIgBHXQDVcyi101s')"></div>
+<div class="absolute inset-0 bg-deep-navy/20 mix-blend-multiply"></div>
+</div>
+</div>
+</div>
+</header>
+<!-- Services Grid -->
+<section class="py-stack-lg max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Service Card 1: Petroleum Supply -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-ambient hover:shadow-ambient-hover transition-shadow duration-300 flex flex-col h-full border border-slate-surface/50 group">
+<div class="h-48 w-full relative overflow-hidden">
+<div class="bg-cover bg-center w-full h-full transform group-hover:scale-105 transition-transform duration-700" data-alt="A professional photograph showing a sprawling network of modern, silver storage tanks at a petroleum distribution terminal. The lighting is crisp and clear, emphasizing the vast scale and organized infrastructure of high-volume crude and refined product distribution. Clean, corporate industrial aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCD6JpiEpHtKxRkWSXPDU9f7mCbX_MBOmtpU_btiiOZKryCKSNBe9ifiQ0K2KoDb1HaqKncyaRtaZMD2yWOHjKuJ6VAlMftePdbw-T5ywYTq2dCno9FTEcJvO2fpI7SDTAYJGBNwpONn6huQnTUfLf7F7z5hT8UTsmQs0r_Rf2bvD1Nr_GR5ySWzEbHx8k6ywSw28xqg8CR_6ozXNXRSrc98qXv4F597SQD4LthB3Eg_2whtDilGpdWtB9ak7EyNy9ljM-MJjYn73Q')"></div>
+<div class="absolute inset-0 bg-deep-navy/10"></div>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur rounded p-2 flex items-center justify-center">
+<span class="material-symbols-outlined text-petroleum-blue" data-icon="oil_barrel" data-weight="fill" style="font-variation-settings: 'FILL' 1;">oil_barrel</span>
+</div>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-deep-navy mb-4">Petroleum Supply</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
+                        High-volume crude and refined product distribution ensuring uninterrupted energy flow to global markets.
+                    </p>
+<a class="font-label-md text-label-md text-energy-orange flex items-center gap-2 uppercase tracking-wide hover:opacity-80 transition-opacity mt-auto" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service Card 2: Logistics -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-ambient hover:shadow-ambient-hover transition-shadow duration-300 flex flex-col h-full border border-slate-surface/50 group">
+<div class="h-48 w-full relative overflow-hidden">
+<div class="bg-cover bg-center w-full h-full transform group-hover:scale-105 transition-transform duration-700" data-alt="An aerial view of a massive, heavily automated shipping port with cargo ships and endless rows of colorful shipping containers. The scene highlights global logistics, supply chain efficiency, and pipeline management. The aesthetic is sharp, modern, and industrial, photographed with a clean corporate style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAXvxaTBQJSYdOWak7E5_ecSqlts42Rzhnv8zlyGdkbIKqoh5e5hwA1JO_ypa2ThDd2JIgfcS6UdE5OmXjvKu9UtzWux93i-mVlaVyKjb6YhIIMvR_ToFKg1U5xrfHvpDj1FwIBrGZBdstbgHaoffdBbeVusk0yNmzY42MJm2CD32iarYVTl706xBjSsxSWuIhu0IVpZdbF8qgmB8fWr98hkyHqvmndYOyN9G7sJ74Dgml4BvvkIQRNu3PWPcwUJBeaCwxphSLRMdI')"></div>
+<div class="absolute inset-0 bg-deep-navy/10"></div>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur rounded p-2 flex items-center justify-center">
+<span class="material-symbols-outlined text-petroleum-blue" data-icon="local_shipping" data-weight="fill" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+</div>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-deep-navy mb-4">Logistics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
+                        End-to-end global supply chain and robust pipeline management tailored for complex industrial operations.
+                    </p>
+<a class="font-label-md text-label-md text-energy-orange flex items-center gap-2 uppercase tracking-wide hover:opacity-80 transition-opacity mt-auto" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service Card 3: Marine Fuel -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-ambient hover:shadow-ambient-hover transition-shadow duration-300 flex flex-col h-full border border-slate-surface/50 group">
+<div class="h-48 w-full relative overflow-hidden">
+<div class="bg-cover bg-center w-full h-full transform group-hover:scale-105 transition-transform duration-700" data-alt="A dramatic shot of a massive international cargo ship being refueled by a specialized bunkering vessel in deep blue waters. The focus is on the marine fuel transfer process. High contrast, clean lighting, showcasing maritime industrial scale and reliability." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD6vzfvbA7mSe2IlpGUrXLXUYyMQ44wLqq8B5xsTGqMH1WI0UcfuqHKLV21B7pdEZm33PswthWQ72M4oi7yD0O7FjRg3mxT6QtqPf7sX9-l2W_LYLQLJX4r2JK6DqlpaM_Gikd2jPZuRRQ2oMQ869-i4Zf28J1eQAYPiPnosat1kG4ZGJPiyrJWVfaTjMsdJPfTfHy0GaBohGCeLw8fjS8LMed3yXICJ4RQD9vwQLDwV80po3cgWKMBnPcZ4g15YjB4TOv8wqFlW8w')"></div>
+<div class="absolute inset-0 bg-deep-navy/10"></div>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur rounded p-2 flex items-center justify-center">
+<span class="material-symbols-outlined text-petroleum-blue" data-icon="directions_boat" data-weight="fill" style="font-variation-settings: 'FILL' 1;">directions_boat</span>
+</div>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-deep-navy mb-4">Marine Fuel</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
+                        Premium bunkering services supporting the continuous operation of international shipping fleets globally.
+                    </p>
+<a class="font-label-md text-label-md text-energy-orange flex items-center gap-2 uppercase tracking-wide hover:opacity-80 transition-opacity mt-auto" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service Card 4: Lubricants -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-ambient hover:shadow-ambient-hover transition-shadow duration-300 flex flex-col h-full border border-slate-surface/50 group">
+<div class="h-48 w-full relative overflow-hidden">
+<div class="bg-cover bg-center w-full h-full transform group-hover:scale-105 transition-transform duration-700" data-alt="A close-up, high-tech macro photograph of golden industrial lubricant being poured onto precision-engineered metal gears. The lighting highlights the viscous texture and the pristine metallic surfaces. It conveys high-performance automotive and industrial engineering solutions." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqWMvejxRkuAX0tOBWgCYJyFtb0obJmqYtAt2xs0xuHa4dAGr_4_nlWrKnYz3M7uBzJdVMqxi06BBC3vFhS_F1J6q4zTCFp7Di44o_P2E4bj5zkwYcrP2Oe7KSUdeW4IIOlEL7gr4130SD5-QdQTCoYwyCb_uABwmqCz10qUt0KqMZY6pUUMW7L78Qi5u4eWOmQYl-mjYjVoRutUWiZ15dYMVKcLBk3QLYerw809hU3SJDldxhoNRzFOH907QEwMbrUNWcAGCMrag')"></div>
+<div class="absolute inset-0 bg-deep-navy/10"></div>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur rounded p-2 flex items-center justify-center">
+<span class="material-symbols-outlined text-petroleum-blue" data-icon="water_drop" data-weight="fill" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+</div>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-deep-navy mb-4">Lubricants</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
+                        High-performance industrial and automotive lubricants engineered to extend machinery life and efficiency.
+                    </p>
+<a class="font-label-md text-label-md text-energy-orange flex items-center gap-2 uppercase tracking-wide hover:opacity-80 transition-opacity mt-auto" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service Card 5: Procurement -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-ambient hover:shadow-ambient-hover transition-shadow duration-300 flex flex-col h-full border border-slate-surface/50 group">
+<div class="h-48 w-full relative overflow-hidden">
+<div class="bg-cover bg-center w-full h-full transform group-hover:scale-105 transition-transform duration-700" data-alt="A sleek, brightly lit warehouse interior showing rows of heavy-duty energy equipment and components meticulously organized on massive industrial racks. Professional corporate photography emphasizing strategic sourcing, scale, and organizational excellence." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDa1MVsYuVVx_Wqbbwln8eA9f0WYRWxmos3J3QPNq7T4JHLYuCGm1Pj7g58CTy-uE9vNQoBkYoR-RZzIbpaPGe6FWsYNhss_Sym7x375G4TwqTGk79VeQ-CoTld2gmxhFfF1rkIqb68oqH1ctFxKzERuMqizLlj3c7wbuRgyUYE00FaXg29oGuayoCBwLiZ6uaeSWtzxA-7flQZ_1Um2j7k2SnszXaUysfnnMH2gXAqbOCZ1KI7usm0tSXG2OFOgMB2TlkS4TIuiyQ')"></div>
+<div class="absolute inset-0 bg-deep-navy/10"></div>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur rounded p-2 flex items-center justify-center">
+<span class="material-symbols-outlined text-petroleum-blue" data-icon="inventory_2" data-weight="fill" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+</div>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-deep-navy mb-4">Procurement</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
+                        Strategic sourcing of critical energy equipment, ensuring cost-efficiency and operational readiness.
+                    </p>
+<a class="font-label-md text-label-md text-energy-orange flex items-center gap-2 uppercase tracking-wide hover:opacity-80 transition-opacity mt-auto" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service Card 6: Engineering -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-ambient hover:shadow-ambient-hover transition-shadow duration-300 flex flex-col h-full border border-slate-surface/50 group">
+<div class="h-48 w-full relative overflow-hidden">
+<div class="bg-cover bg-center w-full h-full transform group-hover:scale-105 transition-transform duration-700" data-alt="A team of professional engineers in hard hats reviewing complex blueprints on a digital tablet in front of a sprawling, highly technical refinery infrastructure. The image portrays expertise, infrastructure development, and refinery engineering solutions in a modern corporate style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBEfqJmRN9SPnIvT409I8Gp-Pqh01LlPsB3bXM_DV2lBbwPN7r-VWZ7pxeWBdgraU-Zjk4ngdRwr-6H3z6CCwQtdVJNKegJbCIRCQpCnHCElAbbfmevmC5zbrdOX_1DR8VExmW_KWv3nAUHxsRsur9YZYlaoZu1rUsc6HqeFvKZ_ip36_lCPsPcS4S9MwPjKPyjoImfHurS-VlJEovkTG9hwWZ0l5pD-AulY3q_Z7A7Li_dvgyXLjAUgZYakxwFgRm4RMKTvi4R8GE')"></div>
+<div class="absolute inset-0 bg-deep-navy/10"></div>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur rounded p-2 flex items-center justify-center">
+<span class="material-symbols-outlined text-petroleum-blue" data-icon="engineering" data-weight="fill" style="font-variation-settings: 'FILL' 1;">engineering</span>
+</div>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-deep-navy mb-4">Engineering</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
+                        Cutting-edge infrastructure and refinery engineering solutions designed for maximum safety and yield.
+                    </p>
+<a class="font-label-md text-label-md text-energy-orange flex items-center gap-2 uppercase tracking-wide hover:opacity-80 transition-opacity mt-auto" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service Card 7: Energy Solutions (Featured span 3 columns on large screens) -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-ambient hover:shadow-ambient-hover transition-shadow duration-300 flex flex-col h-full border border-slate-surface/50 group lg:col-span-3 lg:flex-row">
+<div class="h-64 lg:h-auto lg:w-1/2 relative overflow-hidden">
+<div class="bg-cover bg-center w-full h-full transform group-hover:scale-105 transition-transform duration-700" data-alt="A stunning juxtaposition of traditional energy infrastructure alongside modern, sleek renewable energy wind turbines and solar panels set against a vibrant blue sky. This represents renewable energy integration and sustainability consulting, carrying a premium, forward-looking corporate aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCdERZKj0tHiISnvvOS8xd1E2YAgYIsA7JDoHIbQqlw5s7zEsUL4KX6eRpTHoFk9ELh2z5F9X-r8Zd0MoNe3J8AyiWxsWqbRKZ1xYJBbRA7RMiOJNEyNHSUhUDoc8pCqFuwMv20DZTZOEOe6nNBMtxK3UaEmXb7VnhgRl_Z-cjsnDt-v5Ti27dy5gOwOEYHhDO-osjVhC6rAkqx1dBXHVXpAmeaY42pga8aCa1cY_21hGoConaYSVNpoC0ihAZa_MeggEJvMPlZ_U8')"></div>
+<div class="absolute inset-0 bg-deep-navy/10"></div>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur rounded p-2 flex items-center justify-center lg:hidden">
+<span class="material-symbols-outlined text-petroleum-blue" data-icon="eco" data-weight="fill" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+</div>
+<div class="p-8 lg:p-12 lg:w-1/2 flex flex-col justify-center bg-deep-navy text-white">
+<div class="hidden lg:flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-energy-orange" data-icon="eco" data-weight="fill" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-label-md text-label-md text-energy-orange uppercase tracking-wide">Featured Service</span>
+</div>
+<h3 class="font-headline-xl text-headline-xl text-white mb-4">Energy Solutions</h3>
+<p class="font-body-lg text-body-lg text-inverse-primary flex-grow mb-8 opacity-90">
+                        Pioneering renewable energy integration and expert sustainability consulting. We guide global enterprises through the energy transition, balancing immediate power needs with long-term ecological responsibility.
+                    </p>
+<button class="bg-energy-orange text-white px-8 py-3 rounded font-label-md text-label-md hover:opacity-90 transition-opacity w-fit flex items-center gap-2">
+                        Explore Solutions <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer Component -->
+<footer class="bg-deep-navy dark:bg-primary-container w-full flat mt-stack-lg">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-md max-w-container-max mx-auto px-margin-desktop py-stack-lg">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md font-bold text-white mb-4">
+                    PetroGlobal
+                </div>
+<p class="font-body-md text-body-md text-surface-variant/70 mb-4">
+                    © 2024 PetroGlobal Energy Corp. All rights reserved.
+                </p>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-wrap gap-gutter justify-start md:justify-end">
+<a class="font-body-md text-body-md text-surface-variant/70 hover:text-energy-orange transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-surface-variant/70 hover:text-energy-orange transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-surface-variant/70 hover:text-energy-orange transition-colors" href="#">Compliance</a>
+<a class="font-body-md text-body-md text-surface-variant/70 hover:text-energy-orange transition-colors" href="#">Global Offices</a>
+</div>
+</div>
+</footer>
+</body></html>

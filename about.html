@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About - PetroGlobal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "secondary-container": "#b3d1fd",
+                            "on-secondary-container": "#3c597f",
+                            "petroleum-blue": "#1B3B5F",
+                            "surface-container-lowest": "#ffffff",
+                            "background": "#f7f9fb",
+                            "inverse-primary": "#b9c7e4",
+                            "on-tertiary-fixed": "#351000",
+                            "surface": "#f7f9fb",
+                            "on-secondary-fixed": "#001c38",
+                            "energy-orange": "#FF6B00",
+                            "on-primary-container": "#76849f",
+                            "primary-fixed": "#d6e3ff",
+                            "inverse-surface": "#2d3133",
+                            "surface-container": "#eceef0",
+                            "primary": "#000000",
+                            "tertiary-fixed-dim": "#ffb693",
+                            "on-primary-fixed-variant": "#39475f",
+                            "surface-dim": "#d8dadc",
+                            "on-surface": "#191c1e",
+                            "primary-container": "#0d1c32",
+                            "inverse-on-surface": "#eff1f3",
+                            "surface-container-high": "#e6e8ea",
+                            "on-secondary-fixed-variant": "#2a486d",
+                            "on-secondary": "#ffffff",
+                            "error-container": "#ffdad6",
+                            "tertiary": "#000000",
+                            "secondary-fixed-dim": "#abc8f4",
+                            "slate-surface": "#E2EBF0",
+                            "outline-variant": "#c5c6cd",
+                            "error": "#ba1a1a",
+                            "primary-fixed-dim": "#b9c7e4",
+                            "surface-variant": "#e0e3e5",
+                            "on-error": "#ffffff",
+                            "action-cyan": "#00AEEF",
+                            "surface-container-highest": "#e0e3e5",
+                            "on-primary-fixed": "#0d1c32",
+                            "surface-container-low": "#f2f4f6",
+                            "on-tertiary": "#ffffff",
+                            "surface-tint": "#515f78",
+                            "on-surface-variant": "#44474d",
+                            "on-error-container": "#93000a",
+                            "secondary-fixed": "#d3e4ff",
+                            "on-primary": "#ffffff",
+                            "surface-bright": "#f7f9fb",
+                            "outline": "#75777e",
+                            "on-background": "#191c1e",
+                            "tertiary-container": "#351000",
+                            "on-tertiary-fixed-variant": "#7a3000",
+                            "on-tertiary-container": "#dd5c00",
+                            "secondary": "#426086",
+                            "tertiary-fixed": "#ffdbcc",
+                            "deep-navy": "#0A192F"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "0.25rem",
+                            "lg": "0.5rem",
+                            "xl": "0.75rem",
+                            "full": "9999px"
+                    },
+                    "spacing": {
+                            "stack-sm": "16px",
+                            "base": "8px",
+                            "container-max": "1440px",
+                            "gutter": "24px",
+                            "margin-desktop": "64px",
+                            "margin-mobile": "24px",
+                            "stack-lg": "80px",
+                            "stack-md": "32px"
+                    },
+                    "fontFamily": {
+                            "display-lg": ["Plus Jakarta Sans"],
+                            "headline-lg": ["Plus Jakarta Sans"],
+                            "headline-xl": ["Plus Jakarta Sans"],
+                            "label-md": ["Inter"],
+                            "headline-lg-mobile": ["Plus Jakarta Sans"],
+                            "headline-md": ["Plus Jakarta Sans"],
+                            "body-md": ["Inter"],
+                            "body-lg": ["Inter"],
+                            "caption": ["Inter"]
+                    },
+                    "fontSize": {
+                            "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                            "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                            "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                            "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                            "headline-lg-mobile": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                            "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                            "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                            "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                            "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 40px rgba(10, 25, 47, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-deep-navy/80 backdrop-blur-md shadow-sm dark:shadow-none transition-all duration-300" id="main-nav">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20">
+<!-- Brand -->
+<a class="font-headline-md text-headline-md font-bold text-petroleum-blue dark:text-inverse-primary tracking-tight" href="#">
+                PetroGlobal
+            </a>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-label-md text-label-md text-on-surface dark:text-on-surface-variant hover:text-energy-orange transition-colors" href="#">Home</a>
+<a class="font-label-md text-label-md text-energy-orange font-bold border-b-2 border-energy-orange pb-1 Active: opacity-80 scale-95 transition-transform" href="#">About</a>
+<a class="font-label-md text-label-md text-on-surface dark:text-on-surface-variant hover:text-energy-orange transition-colors" href="#">Services</a>
+<a class="font-label-md text-label-md text-on-surface dark:text-on-surface-variant hover:text-energy-orange transition-colors" href="#">Projects</a>
+<a class="font-label-md text-label-md text-on-surface dark:text-on-surface-variant hover:text-energy-orange transition-colors" href="#">Contact</a>
+</div>
+<!-- Trailing Action -->
+<div class="hidden md:flex items-center space-x-4">
+<button class="bg-deep-navy text-on-primary font-label-md text-label-md px-6 py-2.5 rounded-lg hover:bg-petroleum-blue transition-colors duration-300 shadow-sm hover:shadow-md">
+                    Contact Us
+                </button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button aria-label="Toggle menu" class="md:hidden text-on-surface dark:text-on-surface-variant p-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-20">
+<!-- Hero Section -->
+<section class="relative w-full min-h-[614px] flex items-center bg-petroleum-blue overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center opacity-40 mix-blend-overlay" data-alt="A sweeping, high-altitude drone shot of a massive, state-of-the-art offshore energy platform rising from deep blue ocean waters. The scene is illuminated by dramatic, golden-hour sunlight casting long, precise shadows across the intricate steel structures. The overall mood is powerful, industrial, and highly engineered, reflecting modern corporate reliability. Deep navy blues and bright structural whites dominate the palette, conveying trust at scale." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBgtWz26N-xYSgUZmN7zPHJcFoI5CH72cV0Ykr1gCbK9VUY-eaVlYu-7E3p3QinUyRXso99xwrRwZDwIuepJwWTXj2q93tPoHRDPABPoktIsFzyzYu4StEWwK48NghMwa8CP3P4mBwwRKrVhGTzUGkocX-7LkoWT_6pfSjpURwM_E1kkqpwLWVgzJszML5Zak92hi1SXtAW_NOkLLOf_RpEXU0XQMM1T-G-5-HI27Rr5HHT5n1oVQ4zt_i_R530HHnhd4V2GU4jdo4')"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full py-stack-lg">
+<div class="max-w-3xl">
+<span class="inline-block px-3 py-1 mb-6 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md uppercase tracking-wider">Our Mission</span>
+<h1 class="font-display-lg text-display-lg text-white mb-6">Innovating for a Sustainable Energy Future.</h1>
+<p class="font-body-lg text-body-lg text-inverse-primary max-w-2xl">At PetroGlobal, we bridge the gap between industrial grit and technological precision, engineering solutions that power the world responsibly.</p>
+</div>
+</div>
+</section>
+<!-- Core Values (Bento Grid) -->
+<section class="py-stack-lg bg-surface">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-stack-md">
+<h2 class="font-headline-xl text-headline-xl text-petroleum-blue mb-4">Core Values</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">The principles that drive our operations and shape our global impact.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Value 1 -->
+<div class="glass-card rounded-xl p-8 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 rounded-lg bg-secondary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-petroleum-blue" style="font-variation-settings: 'FILL' 1;">shield_locked</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Trust</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Unwavering integrity in every partnership and operation globally.</p>
+</div>
+<!-- Value 2 -->
+<div class="glass-card rounded-xl p-8 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-petroleum-blue" style="font-variation-settings: 'FILL' 1;">precision_manufacturing</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Reliability</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Delivering consistent, high-quality energy solutions without interruption.</p>
+</div>
+<!-- Value 3 -->
+<div class="glass-card rounded-xl p-8 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300 md:col-span-2 relative overflow-hidden group">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center opacity-20 group-hover:opacity-30 transition-opacity duration-500" data-alt="Close-up abstract shot of glowing optical fibers and digital data streams overlaid onto a pristine, high-tech industrial pipeline. The lighting is cool, utilizing crisp whites and subtle cyan tints to suggest innovation and technological advancement. The mood is sophisticated and forward-looking, perfectly matching a modern corporate aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAp2I_chx0vh29c7sxtrwVu6pnHxIk6cDeMfqZRceEUyZ47uLMbaTjcKvSUz7KT2ifnSrPpiaaAVrdUZbvDosfFW8LltVDSeMgcJv2cRHg4HR6PL5MfOWMZ24I-993mqOCOw3oVyGP0ePv94f_NwS7d1z2lnzQkpZk4JfuFnrCmPXN1IMeoelGSVjgo-xLSn3iwCOkAvtkOwdNQGKMzDU-c4j6jB4Dk6DeK08JfZa6Ic0fKvK_bqO1gzykNCRLH7V7RYpbAjE1aXXU')"></div>
+</div>
+<div class="relative z-10">
+<div class="w-12 h-12 rounded-lg bg-energy-orange/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-energy-orange" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Innovation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Pioneering next-generation technologies to optimize efficiency and reduce environmental impact across all sectors.</p>
+</div>
+</div>
+<!-- Value 4 -->
+<div class="glass-card rounded-xl p-8 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300 md:col-span-4 bg-petroleum-blue text-white overflow-hidden relative">
+<div class="absolute right-0 top-0 w-1/2 h-full hidden md:block">
+<div class="w-full h-full bg-cover bg-center opacity-50 mix-blend-luminosity" data-alt="A highly detailed, professional photograph of a pristine, modern oil refinery facility at dusk. The structural steel and complex piping are sharply in focus, illuminated by clean, bright artificial lights that contrast with the deep navy blue of the twilight sky. The image conveys operational excellence and flawless engineering execution." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA7bCZOZIaYeuMGp_OP-RwRBJz5RPSLbYU4Ket9oU94b6yPvZi0iWrReG9D64_qyHCNa9bwdc8LnE_rI3vsrBiA565ZynrHeNQbpGyVjVf485DGCPW9ZtGx-dQ3vmhQMMOs3kgiZ82lFFPJ8oZdA6Fcd8YAVqh7dnsR2hFkGbT2FaMJhJyy6UUX3y2DyM-3oHvJtkw-8OXEoBWwuFg7TxirLr3Egpf04MrMlTLYvuu9PBCE-M2JiCNfOpLlKR7CEHkX8jyRHmTp66M')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-petroleum-blue to-transparent"></div>
+</div>
+<div class="relative z-10 md:w-1/2">
+<div class="w-12 h-12 rounded-lg bg-white/10 backdrop-blur-sm flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-white mb-3">Excellence</h3>
+<p class="font-body-md text-body-md text-inverse-primary mb-6 max-w-lg">Pursuing the highest standards in engineering, safety, and operational performance to set industry benchmarks.</p>
+<button class="bg-energy-orange text-white font-label-md text-label-md px-6 py-2.5 rounded-lg hover:bg-[#e66000] transition-colors duration-300 shadow-sm inline-flex items-center">
+                                Learn More <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-deep-navy dark:bg-primary-container text-on-primary dark:text-on-primary-container font-body-md text-body-md flat mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-md max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg">
+<!-- Brand Column -->
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md font-bold text-white mb-4">
+                    PetroGlobal
+                </div>
+<p class="text-surface-variant/70 text-sm mb-6">Powering progress through innovation and responsible engineering.</p>
+<div class="text-surface-variant/70 text-sm">
+                    © 2024 PetroGlobal Energy Corp. All rights reserved.
+                </div>
+</div>
+<!-- Links Column -->
+<div class="col-span-1 md:col-span-3 flex flex-col md:flex-row md:justify-end gap-8 md:gap-16">
+<div class="flex flex-col space-y-3">
+<a class="text-surface-variant/70 hover:text-energy-orange transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="text-surface-variant/70 hover:text-energy-orange transition-colors duration-300" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col space-y-3">
+<a class="text-surface-variant/70 hover:text-energy-orange transition-colors duration-300" href="#">Compliance</a>
+<a class="text-surface-variant/70 hover:text-energy-orange transition-colors duration-300" href="#">Global Offices</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Simple script to add a subtle shadow to the nav when scrolling
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 10) {
+                nav.classList.add('shadow-md');
+                nav.classList.remove('shadow-sm');
+            } else {
+                nav.classList.remove('shadow-md');
+                nav.classList.add('shadow-sm');
+            }
+        });
+    </script>
+</body></html>
